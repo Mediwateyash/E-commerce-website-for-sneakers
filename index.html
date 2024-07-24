@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+      
+        /* CSS for the Dropdown Menu */
+    <style>
+        
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            min-width: 160px;
+            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- ===== BOX ICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Responsive Ecommerce Website Sneakers</title>
+  </head>
+  <body>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... (your existing head content) ... -->
+    <title>Responsive Ecommerce Website Sneakers</title>
+</head>
+<body>
+
+
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-grid">
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="bx bxs-grid"></i>
+            </div>
+
+            <a href="#" class="nav__logo">sharkyy</a>
+
+            <!-- Modified "More" Button with Dropdown -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Nike</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#women" class="nav__link">Adidas</a>
+                    </li>
+                   <li class="nav__item dropdown">
+    <span class="nav__link">More <i class="bx bx-caret-down"></i></span>
+    <div class="dropdown-content">
+        <a href="#puma">Puma</a> <!-- Add this line to link to the Puma section -->
+        <a href="#reebok">Reebok</a> <!-- Add this line to link to the Reebok section -->
+        <a href="#tommy-hilfiger">Tommy Hilfiger</a> <!-- Add this line to link to the Tommy Hilfiger section -->
+    </div>
+</li>
+
+                </ul>
+            </div>
+           
+            <a href="https://wa.me/+918799903365"TARGET="_blank"> 
+                <i class="bx bx-support"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="l-main"> 
+ 
+      <!--===== HOME =====-->
+      <section class="home" id="home">
+        <div class="home__container bd-grid">
+          <div class="home__sneaker">
+            <div class="home__shape"></div>
+            <img src="assets/img/imghome.png" alt="" class="home__img" />
+          </div>
+
+          <div class="home__data">
+            <span class="home__new">New in</span>
+            <h1 class="home__title">
+              YEZZY BOOST <br />
+              SPLY - 350
+            </h1>
+            <p class="home__description">
+              Explore the new collections of sneakers
+            </p>
+            <a href="#" class="button">Explore now</a>
+          </div>
+        </div>
+      </section>
+
+      <!--===== nike =====-->
+      <section class="featured section" id="featured">
+        <h2 class="section-title">Nike</h2>
+
+        <div class="featured__container bd-grid">
+          <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="assets/img/featured1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Nike Jordan red</span>
+            <span class="sneaker__price">₹70000</span>
+            <a href=https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Air%20Jordan%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21
+TARGET="_blank"> 
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+
+          <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+   <img src="assets/img/featured2.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike Jordan Black</span>
+  <span class="sneaker__price">₹50000</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Jordan%20Black%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21"TARGET="_blank"> 
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+
+
+          <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/featured3.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike Jordan Grey</span>
+  <span class="sneaker__price">₹45000</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Jordan%20Grey%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+            
+ <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/NIKE2.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike        AirMax </span>
+  <span class="sneaker__price">₹14999</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Jordan%20Grey%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+             <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/NIKE3.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike         AirExcee  </span>
+  <span class="sneaker__price">₹16999</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%203%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21
+"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+            <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/NIKE4.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike UrbanPulse </span>
+  <span class="sneaker__price">₹19999</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%204%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%
+"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+            
+            <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/NIKE8.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike RhythmRide </span>
+  <span class="sneaker__price">₹12999</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20changehere%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%
+"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+            
+            <article class="sneaker">
+  <div class="sneaker__sale">Sale</div>
+  <img src="assets/img/NIKE6.png" alt="" class="sneaker__img" />
+  <span class="sneaker__name">Nike PulseStride </span>
+  <span class="sneaker__price">₹11999</span>
+  <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%204%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%
+"target="_blank">
+    Buy now<i class="bx bx-right-arrow-alt button-icon"></i>
+  </a>
+</article>
+            
+            
+        </div>
+      </section>
+
+    
+        <!--===== adidas =====-->
+        <section class="women section" id="women">
+        <h2 class="section-title">Adidas</h2>
+
+        <div class="women__container bd-grid">
+          <article class="sneaker">
+            <img src="assets/img/NIKE5.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas LunarPulse </span>
+            <span class="sneaker__price">₹7999</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20adidas%20grey%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light"class="button-light"target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+
+          <article class="sneaker">
+            <img src="assets/img/adidasx.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas FlexFusion </span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+
+            <article class="sneaker">
+            <img src="assets/img/adidas01.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas UrbanWave </span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+
+           <article class="sneaker">
+            <img src="assets/img/adidas5.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas TempoStride</span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+
+            <article class="sneaker">
+            <img src="assets/img/adidas7.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas PulseWave</span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+             <article class="sneaker">
+            <img src="assets/img/adidas2.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas AeroWalk</span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+             <article class="sneaker">
+            <img src="assets/img/adidas1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas FusionFeet</span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+             <article class="sneaker">
+            <img src="assets/img/adidass1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Adidas InfinityTread</span>
+              <span class="sneaker__price">₹46000</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Adidas%20sportx%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+        </div>
+      </section>
+        <!--===== PUMA SNEAKERS =====-->
+        <section class="puma section" id="puma">
+                <h2 class="section-title">Puma</h2>
+
+                    <div class="featured__container bd-grid">
+        
+        <article class="sneaker">
+            <img src="assets/img/puma1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma BlazeRush </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma2.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma NovaShift </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma3.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma UrbanRoam</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma4.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma IgnitePulse</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+        <article class="sneaker">
+            <img src="assets/img/puma5.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma StrideFusion</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma6.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma VelocityStorm </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma7.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma ThunderStep</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/puma1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Puma SparkStorm </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+     </div>
+    </section>
+        
+    
+           <!--===== REEBOK SNEAKERS =====-->
+   <section class="reebok-section" id="reebok">
+        <h2 class="section-title">Reebok</h2>
+
+        <div class="featured__container bd-grid">
+            
+        <article class="sneaker">
+            <img src="assets/img/Rebook1.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok QuantumGrip </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook2.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok StreetForce</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook4.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok TurboFlex </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook4.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok EpicPulse </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+        <article class="sneaker">
+            <img src="assets/img/Rebook5.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok SwiftFlex</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook6.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok PulseXcel</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook7.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok DynamoStride</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+            Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/Rebook8.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Reebok ImpactRide</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+        </div>
+    </section>
+        
+         
+    <!--===== TOMMY HILFIGER SHOES =====-->
+    <section class="tommy-hilfiger section" id="tommy-hilfiger">
+        <h2 class="section-title">Tommy Hilfiger</h2>
+            
+
+        <div class="featured__container bd-grid">
+            
+        <article class="sneaker">
+            <img src="assets/img/tomhil01.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">CometCruise </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhil03.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">Flamingo </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhill05.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name"> TH Aurum</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhil05.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">UrbanElegance</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+        <article class="sneaker">
+            <img src="assets/img/tomhil6.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">TurboMotion </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhil4.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">AeroSprint</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhil7.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">SparkStyle </span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+            <article class="sneaker">
+            <img src="assets/img/tomhil2.png" alt="" class="sneaker__img" />
+            <span class="sneaker__name">EchoEdge</span>
+              <span class="sneaker__price">₹4600</span>
+            <a href="https://wa.me/918799903365?text=Hello%2C%0A%0AI%27m%20interested%20in%20purchasing%20a%20pair%20of%20Nike%20Lady%20Colors%20shoes.%20Could%20you%20please%20provide%20me%20with%20the%20following%20information%3A%0A%0AAvailable%20sizes%0APrice%0AShipping%20options%0APayment%20methods%0A%0AThank%20you%21" class="button-light" target="_blank">
+              Buy now<i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </article>
+            
+     </div>
+    </section>
+         
+      <!--===== COLLECTION =====-->
+      <section class="collection section">
+        <div class="collection__container bd-grid">
+          <div class="collection__card">
+            <div class="collection__data">
+              <h1 class="collection__name">NIKE</h1>
+              <p class="collection_description">New Collection 2022</p>
+              <a href="#" class="button-light"
+                >Buy now <i class="bx bx-right-arrow-alt button-icon"></i
+              ></a>
+            </div>
+
+            <img
+              src="assets/img/collection1.png"
+              alt=""
+              class="collection__img"
+            />
+          </div>
+
+          <div class="collection__card">
+            <div class="collection__data">
+              <h1 class="collection__name">Addidas</h1>
+              <p class="collection_description">New Collection 2022</p>
+              <a href="#" class="button-light"
+                >Buy now <i class="bx bx-right-arrow-alt button-icon"></i
+              ></a>
+            </div>
+
+            <img
+              src="assets/img/collection2.png"
+              alt=""
+              class="collection__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      
+
+      <!--===== OFFER =====-->
+     <section class="offer section">
+    <div class="offer__container bd-grid">
+        <div class="offer__data">
+            <h1 class="offer__title">50%</h1>
+            <p class="offer__description">In Nike Superstar sneakers</p>
+            <!-- Change the href attribute to point to the #featured section -->
+            <a href="#featured" class="button">Shop Now</a>
+        </div>
+
+        <img src="assets/img/offert.png" alt="" class="offer__img" />
+    </div>
+</section>
+
+      <!--===== NEW COLLECTION =====-->
+      <section class="new section" id="new">
+        <h2 class="section-title">NEW COLLECTION</h2>
+
+        <div class="new__container bd-grid">
+          <div class="new__mens">
+            <img src="./assets/img/new1.png" alt="" class="new__mens-img" />
+            <h3 class="new__title">Mens Shoes</h3>
+              <span class="new__price">from ₹40000</span>
+            <a href="#" class="button-light"
+              >View Collection <i class="bx bx-right-arrow-alt button-icon"></i
+            ></a>
+          </div>
+
+          <div class="new__sneaker">
+            <div class="new__sneaker-card">
+              <img
+                src="./assets/img/new2.png"
+                alt=""
+                class="new__sneaker-img"
+              />
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Buy now</a>
+              </div>
+            </div>
+
+            <div class="new__sneaker-card">
+              <img
+                src="./assets/img/new3.png"
+                alt=""
+                class="new__sneaker-img"
+              />
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Buy now</a>
+              </div>
+            </div>
+
+            <div class="new__sneaker-card">
+              <img
+                src="./assets/img/new4.png"
+                alt=""
+                class="new__sneaker-img"
+              />
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Buy now</a>
+              </div>
+            </div>
+
+            <div class="new__sneaker-card">
+              <img
+                src="./assets/img/new5.png"
+                alt=""
+                class="new__sneaker-img"
+              />
+              <div class="new__sneaker-overlay">
+                <a href="#" class="button">Buy now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== NEWSLETTER =====-->
+      <section class="newsletter section">
+        <div class="newsletter__container bd-grid">
+          <div>
+            <h3 class="newsletter__title">
+              Subscribe And Get <br />
+              10% OFF
+            </h3>
+
+            <p class="newsletter__description">
+              Get 10% discount on all products
+            </p>
+          </div>
+
+          <form action="" class="newsletter__subscribe">
+            <input
+              type="text"
+              placeholder="demo@email.com"
+              class="newsletter__input"
+            />
+            <a href="#" class="button">Subscribe</a>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer section">
+      <div class="footer__container bd-grid">
+        <div class="footer__box">
+          <h3 class="footer__title">sharkyy</h3>
+          <p class="footer__description">New Collection of shoes 2022</p>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__title">Explore</h3>
+          <ul>
+            <li><a href="#home" class="footer__link">Home</a></li>
+            <li><a href="#featured" class="footer__link">new</a></li>
+            <li><a href="#women" class="footer__link">adidas</a></li>
+            <li><a href="#men" class="footer__link">more</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <h3 class="footer__title">Support</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Product Help</a></li>
+            <li><a href="#" class="footer__link">Customer Care</a></li>
+            <li><a href="#" class="footer__link">Authorized Service</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__box">
+          <a href="./assets/img/facebook.JPG" target="_blank" class="footer__social"><i class="bx bxl-facebook"></i></a>
+          <a href="./assets/img/instagram.JPG" target="_blank" class="footer__social"><i class="bx bxl-instagram"></i></a>
+          <a href="./assets/img/twiteer.JPG"target="_blank"  class="footer__social"><i class="bx bxl-twitter"></i></a>
+        </div>
+      </div>
+
+      <p class="footer__copy">&#169; Diwate Yash <br/>
+      Diwateyash2004@gmail.com  </p>
+    </footer>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
