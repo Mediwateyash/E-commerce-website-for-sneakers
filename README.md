@@ -1,4 +1,7 @@
 # E-commerce-website-for-sneakers-
+
+Created by DiwateYash 
+
 This project is a front-end e-commerce website dedicated exclusively to sneakers. Users can browse through various categories of sneaker brands and styles. The website also integrates a WhatsApp chat feature for direct communication between buyers and sellers.
 
 Features:
